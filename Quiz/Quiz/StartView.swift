@@ -13,6 +13,9 @@ struct StartView: View {
                 
                 Spacer()
                 
+                LottieView(name: "question", loopMode: .playOnce)
+                    .frame(width: 100, height: 100)
+                
                 Button {
                     currentScreen = .quiz
                 } label: {
